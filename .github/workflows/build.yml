@@ -18,6 +18,11 @@ jobs:
       with:
         node-version: '16'
 
+    - name: Update submodules
+      run: |
+        git submodule update --init --recursive
+
+
     - name: Install pnpm
       run: npm install -g pnpm
 
