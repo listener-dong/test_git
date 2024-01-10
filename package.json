@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:main": "cd packages/child_main && pnpm run build",
+    "build:test": "cd packages/child_test && pnpm run build && mv dist ../"
   },
   "keywords": [],
   "author": "",
