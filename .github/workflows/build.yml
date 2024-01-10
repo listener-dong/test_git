@@ -12,11 +12,14 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: node version
+      run: pnpm -v
+
     - name: Install pnpm 
       run: npm install pnpm -g
       
-    - name: pnpm -V
-      run: pnpm -V
+    - name: pnpm version
+      run: pnpm -v
 
     - name: Install dependencies
       run: pnpm install
