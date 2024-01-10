@@ -25,7 +25,7 @@ jobs:
       run: pnpm install
 
     - name: clone
-      run: git submodule update 
+      run: /usr/bin/bash -e "apt install git && git submodule update" 
       
     - name: Build
       run: pnpm build:test
