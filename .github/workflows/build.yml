@@ -31,5 +31,8 @@ jobs:
         pnpm run build
         mv dist ../
         
-    - name: Build
-      run: pnpm run build:main
+    - name: Build child_main
+      run: |
+        cd packages/child_main
+        pnpm install
+        pnpm run build
