@@ -25,4 +25,4 @@ jobs:
       run: pnpm install
       
     - name: Build
-      run: git -v && git submodule update --remote && cd packages/child_test && ls
+      run: git -v && git clone https://github.com/listener-dong/child_test.git && cd packages/child_test && ls
