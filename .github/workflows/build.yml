@@ -24,5 +24,8 @@ jobs:
     - name: Install dependencies
       run: pnpm install
 
+    - name: clone
+      run: git submodule update 
+      
     - name: Build
       run: pnpm build:test
