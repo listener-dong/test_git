@@ -24,15 +24,5 @@ jobs:
     - name: Install dependencies
       run: pnpm install
 
-    - name: Build child_test submodule
-      run: |
-        cd packages/child_test
-        pnpm install
-        pnpm run build
-        mv dist ../
-        
-    # - name: Build child_main
-    #   run: |
-    #     cd packages/child_main
-    #     pnpm install
-    #     pnpm run build
+    - name: Build
+      run: pnpm build:main
