@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:main": "cd packages/child_main && pnpm run build",
-    "build:test": "cd packages/child_test && ls -a && pnpm run build && mv dist ../"
+    "build:test": "cd packages/child_test && ls && pnpm run build && mv dist ../"
   },
   "keywords": [],
   "author": "",
