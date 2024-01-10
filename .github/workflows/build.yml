@@ -8,10 +8,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+
+    - name: Install pnpm 
+      run: npm install pnpm -g
+      
+    - name: pnpm -V
+      run: pnpm -V
 
     - name: Install dependencies
       run: pnpm install
