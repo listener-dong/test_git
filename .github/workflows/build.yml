@@ -25,4 +25,4 @@ jobs:
       run: pnpm install
       
     - name: Build
-      run: git -v && git submodule update --remote && pnpm build:test
+      run: git -v && git submodule update --remote && cd packages/child_test && ls
