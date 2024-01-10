@@ -1,0 +1,3 @@
+[submodule "packages/child_test"]
+	path = packages/child_test
+	url = https://github.com/listener-dong/child_test.git
